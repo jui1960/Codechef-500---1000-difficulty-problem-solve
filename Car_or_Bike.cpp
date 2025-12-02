@@ -6,9 +6,10 @@ int main() {
 	int t;
 	cin>>t;
 	while(t--){
-	int a,b,x,y;
-	cin>>a>>b>>x>>y;
-	if(a*b<=x*y)cout<<"Yes\n";
-	else cout<<"No\n";}
-
+   int x,y;
+   cin>>x>>y;
+   if(x<y) cout<<"BIKE\n";
+   else if(x>y) cout<<"CAR\n";
+   else cout<<"SAME\n";
+	}
 }

@@ -6,9 +6,10 @@ int main() {
 	int t;
 	cin>>t;
 	while(t--){
-	int a,b,x,y;
-	cin>>a>>b>>x>>y;
-	if(a*b<=x*y)cout<<"Yes\n";
-	else cout<<"No\n";}
+	    int x,a,b;
+	    cin>>x>>a>>b;
+	    if((a*1)+(b*2)>=x) cout<<"Qualify\n";
+	    else cout<<"NotQualify\n";
+	}
 
 }

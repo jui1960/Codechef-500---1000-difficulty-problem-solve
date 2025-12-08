@@ -38,3 +38,21 @@ int main()
 
     return 0;
 }
+// #include <bits/stdc++.h>
+// using namespace std;
+
+// int main() {
+// 	// your code goes here
+	
+// 	int t;
+// 	cin>>t;
+// 	while(t--){
+// 	    int a,x,b,y;
+// 	    cin>>a>>x>>b>>y;
+// 	    if((double)a/x==(double)b/y)cout <<"Both\n";
+// 	    else if((double)a/x<(double)b/y)cout<<"Chef\n";
+// 	    else cout <<"Chefina\n";
+	  
+// 	}
+
+// }

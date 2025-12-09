@@ -15,21 +15,26 @@ int main()
         int sum = a + b + c;
         int ans = 0;
 
-        if (a <= b && a <= c)
-        {
-            ans = sum - a;
-            cout << ans << '\n';
-        }
-        else if (b <= c)
-        {
-            ans = sum - b;
-            cout << ans << '\n';
-        }
-        else
-        {
-            ans = sum - c;
-            cout << ans << '\n';
-        }
+        // if (a <= b && a <= c)
+        // {
+        //     ans = sum - a;
+        //     cout << ans << '\n';
+        // }
+        // else if (b <= c)
+        // {
+        //     ans = sum - b;
+        //     cout << ans << '\n';
+        // }
+        // else
+        // {
+        //     ans = sum - c;
+        //     cout << ans << '\n';
+        // }
+
+
+        
+        int rs = sum-min({a,b,c});
+        cout<<rs<<'\n';
     }
 
     return 0;

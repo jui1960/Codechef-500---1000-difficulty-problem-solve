@@ -1,0 +1,56 @@
+#include <iostream>
+#include <string>
+#include <vector>
+#include <cassert>
+
+using namespace std;
+
+
+
+void solve() {
+    string r;
+    if (!(cin >> r)) return;
+
+    // Requirement: Assert every character is 's' or 'u'
+    for (char c : r) {
+        assert(c == 's' || c == 'u');
+    }
+
+    int n = r.length();
+    int operations = 0;
+
+    // Condition: The first and last characters must be 's'
+    // This ensures every 'u' has an 's' on both sides.
+    if (r[0] == 'u') {
+        r[0] = 's';
+        operations++;
+    }
+    if (r[n - 1] == 'u') {
+        r[n - 1] = 's';
+        operations++;
+    }
+
+    // Condition: No two 'u's can be adjacent.
+    // If we find 'uu', we change the second 'u' to 's'.
+    for (int i = 1; i < n - 1; ++i) {
+        if (r[i] == 'u' && r[i - 1] == 'u') {
+            r[i] = 's';
+            operations++;
+        }
+    }
+
+    cout << operations << endl;
+}
+
+int main() {
+    // Optimization for fast I/O
+    ios_base::sync_with_stdio(false);
+    cin.tie(NULL);
+
+    int t;
+    if (!(cin >> t)) return 0;
+    while (t--) {
+        solve();
+    }
+    return 0;
+}

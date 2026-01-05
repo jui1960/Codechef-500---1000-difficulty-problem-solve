@@ -7,6 +7,7 @@ int main() {
 	cin>>a>>b>>c;
 	int ans =c*c;
 	if((a*b)==ans)cout<<"YES";
+	//cout<<((a*b)==(c*c)?"YES":"NO");
 	else cout<<"NO";
 
 }

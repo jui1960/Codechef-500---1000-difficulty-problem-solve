@@ -2,10 +2,20 @@
 using namespace std;
 
 int main() {
-    ios_base::sync_with_stdio(false);
-    cin.tie(NULL);
+    int T;
+    cin >> T;
+    while(T--) {
+        int N, A, B;
+        cin >> N >> A >> B;
+        int rounds = 0;
+        int x = N;
+        while(x > 1) {
+            x /= 2;   
+            rounds++;
+        }
 
-    
-
+        int total_time = rounds * A + (rounds - 1) * B;
+        cout << total_time << "\n";
+    }
     return 0;
 }

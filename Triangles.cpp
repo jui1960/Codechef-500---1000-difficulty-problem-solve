@@ -1,0 +1,12 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int A, B;
+    cin >> A >> B;
+
+    int thirdAngle = 180 - (A + B);
+    cout << thirdAngle;
+
+    return 0;
+}
